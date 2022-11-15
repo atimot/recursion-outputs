@@ -1,0 +1,18 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<div class="m-2">
+    <div class="col-6 row justify-content-end mb-2">
+        <label for="operator1">Operand 1 - </label>
+        <!-- inputタグにvalue属性が初期値として表示されます。 -->
+        <input type="text" id="operator1" value="2">
+
+        <label for="operator2">Operand 2 -</label>
+        <input type="text" id="operator2" value="6">
+
+        <!-- inputタグのvalue属性は、要素.valueプロパティで取得することができます。 -->
+        <!-- onclick属性でクリック時に実行されるステートメントを設定します。 -->
+        <button class="ml-1" onclick="alert(`Op1: ` + document.getElementById('operator1').value + `, Op2: ` + document.getElementById('operator2').value)">Test Input</button>
+    </div>
+</div>
